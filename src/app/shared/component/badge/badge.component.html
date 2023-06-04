@@ -1,0 +1,30 @@
+
+<button mat-fab color="primary" routerLink="/">
+  <mat-icon>home</mat-icon>
+</button>
+<hr>
+
+<p matBadge="4" matBadgeSize="large" matBadgeOverlap="false" class="demo-section">badge works!</p>
+<div matBadge="6"  matBadgeOverlap="false" class="demo-section"> Text With Badge</div>
+<h4 matBadge="4" matBadgePosition="before">Mat badge Position</h4>
+<h4 matBadge="9" matBadgePosition="below">Mat badge Position</h4>
+<h4 matBadge="5" matBadgePosition="below before" color="warn">Mat badge Position</h4>
+
+<br>
+<div class="demo-section">
+    Button with a badge 
+    <button mat-raised-button color="accent"
+        matBadge="10" matBadgePosition="after" matBadgeColor="primary">
+      Action
+    </button>
+  </div>
+
+  <div class="demo-section">
+    Button toggles badge visibility
+    <button mat-raised-button matBadge="2" matBadgeColor="warn" color="primary" [matBadgeHidden]="visible"  (click)="visible= !visible">
+        Hide
+    </button>
+  </div>
+
+
+  <button mat-stroked-button routerLink="/spinner"> Go to spinner</button>

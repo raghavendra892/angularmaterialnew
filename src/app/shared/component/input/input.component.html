@@ -1,0 +1,40 @@
+
+<button mat-fab color="primary" routerLink="/">
+    <mat-icon>home</mat-icon>
+</button>
+<hr>
+
+<!-- <form>
+    <mat-form-field>
+        <mat-label>Email Address</mat-label>
+        <input matInput [placeholder]="'email@gmail.com'">
+        <mat-hint>Enter your Email Address</mat-hint>
+    </mat-form-field>
+</form> -->
+
+<form class="form-cont">
+    <mat-form-field class="input-cont" appearance="fill">
+      <mat-label>Email Address</mat-label>
+      <input type="email" matInput
+      [placeholder]="'email@gmail.com'">
+      <mat-hint>Enter your Email Address</mat-hint>
+    </mat-form-field>
+
+
+    <mat-form-field appearance="fill" class="input-cont">
+        <mat-label> Spinner Input Value</mat-label>
+        <input matInput (input)="spinnerVal($event)">
+        <mat-hint>Enter Spinner value</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-cont">
+        <mat-label>Progress bar input Value</mat-label>
+        <input matInput (input)="progressVal($event)">
+        <mat-hint>Enter Progress Value</mat-hint>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button color="warn" routerLink="/spinner">Spinner compnent</button>
+
+
+
+  

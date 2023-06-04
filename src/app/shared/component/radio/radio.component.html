@@ -1,0 +1,27 @@
+
+<button mat-fab color="primary" routerLink="/">
+    <mat-icon>home</mat-icon>
+</button>
+<hr>
+
+
+
+<mat-radio-group aria-label="Select an option" class="radiobtn" [(ngModel)]="gender">
+    <mat-radio-button value="male">Male</mat-radio-button>
+    <mat-radio-button value="female">FeMale</mat-radio-button>
+    <mat-radio-button value="transgender">Transgender</mat-radio-button>
+</mat-radio-group>
+<p>Selected Gender is : <strong> {{gender | titlecase}}</strong></p>
+
+
+<div class="radio">
+    
+<h3>
+   ** Radio Button using ngFor **
+</h3>
+<label>Favourite Season</label>
+<mat-radio-group class="radiobtn" [(ngModel)]="selectedSeason">
+    <mat-radio-button *ngFor="let season of seasons" [value]="season">{{season}}</mat-radio-button>
+</mat-radio-group>
+<p>Selected Season is : <strong> {{selectedSeason | titlecase}}</strong></p>
+</div>

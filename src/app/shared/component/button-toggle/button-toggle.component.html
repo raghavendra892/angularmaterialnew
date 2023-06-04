@@ -1,0 +1,20 @@
+<button mat-fab color="primary" routerLink="/">
+    <mat-icon>home</mat-icon>
+</button>
+<hr>
+<h2 class="btn-tog">Single Selection</h2>
+<mat-button-toggle-group #group="matButtonToggleGroup"
+    (click)="tglval(group)" value="All">
+    <mat-button-toggle value="home">Home</mat-button-toggle>
+    <mat-button-toggle value="office">Office</mat-button-toggle>
+    <mat-button-toggle value="hybrid">Hybrid</mat-button-toggle>
+</mat-button-toggle-group>
+
+
+<h2 class="btn-tog">Multiple Selection</h2>
+<mat-button-toggle-group multiple>
+    <mat-button-toggle>Red</mat-button-toggle>
+    <mat-button-toggle>Blue</mat-button-toggle>
+    <mat-button-toggle>Orange</mat-button-toggle>
+    <mat-button-toggle>Pink</mat-button-toggle>
+</mat-button-toggle-group>

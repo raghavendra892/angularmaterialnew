@@ -1,0 +1,16 @@
+
+<button mat-fab color="primary" routerLink="/">
+    <mat-icon>home</mat-icon>
+</button>
+<hr>
+
+<mat-drawer-container class="example-container">
+    <mat-drawer class="example-sidenav"  #drawer>
+        <p>This is Sidenav</p>
+        <p *ngIf="isVisible">This is extra test</p>
+        <button mat-stroked-button (click)="isVisible=!isVisible">Toggle Text</button>
+    </mat-drawer>
+    <div class='example-sidenav-content'>
+        <button mat-stroked-button (click)="drawer.open()">Toggle SideNav</button>
+    </div>
+</mat-drawer-container>

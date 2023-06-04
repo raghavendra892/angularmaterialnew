@@ -1,0 +1,42 @@
+<button mat-fab color="primary" routerLink="/">
+    <mat-icon>home</mat-icon>
+</button>
+<hr>
+
+<button mat-fab [matMenuTriggerFor]="matMenu" color="primary">Menu</button>
+<mat-menu #matMenu>
+    <button mat-menu-item>Office</button>
+    <button mat-menu-item>Hybrid</button>
+    <button mat-menu-item>Remote</button>
+</mat-menu>
+
+
+<button mat-fab [matMenuTriggerFor]="matMenu1" color="accent">Menu</button>
+
+<mat-menu #matMenu1 yPosition="above">
+    <button mat-menu-item>Office</button>
+    <button mat-menu-item>Hybrid</button>
+    <button mat-menu-item>Remote</button>
+</mat-menu>
+
+
+<button mat-fab [matMenuTriggerFor]="matMenu2" color="primary">Menu</button>
+<mat-menu #matMenu2 xPosition="before">
+    <button mat-menu-item>Office</button>
+    <button mat-menu-item>Hybrid</button>
+    <button mat-menu-item>Remote</button>
+</mat-menu>
+
+
+
+
+<button mat-fab [matMenuTriggerFor]="matMenu3" color="warn">Menu</button>
+<mat-menu #matMenu3 xPosition="after">
+    <button mat-menu-item>Office</button>
+    <button mat-menu-item>Hybrid</button>
+    <button mat-menu-item>Remote</button>
+</mat-menu>
+
+
+
+

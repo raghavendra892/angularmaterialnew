@@ -1,0 +1,14 @@
+
+<button mat-icon-button color="primary" routerLink="/">
+    <mat-icon>home</mat-icon>
+</button><hr>
+
+<mat-form-field appearance="fill" style="width : 400px">
+    <mat-label>Select Or Enter Date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>Date Format Should be DD/MM/YYYY</mat-hint>
+    <mat-datepicker #picker></mat-datepicker>
+    <mat-datepicker-toggle matIconSuffix [for]="picker" ></mat-datepicker-toggle>    
+</mat-form-field>
+
+

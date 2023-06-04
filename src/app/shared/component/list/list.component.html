@@ -1,0 +1,16 @@
+
+<button mat-fab color="primary" routerLink="/">
+    <mat-icon>home</mat-icon>
+</button>
+<hr>
+
+<mat-list>
+    <div mat-subheader>Folders</div>
+    <mat-list-item *ngFor="let folder of folders">
+        <mat-icon matListItemIcon>{{folder.icon}}</mat-icon>
+        <div matListItemTitle>{{folder.name}}</div>
+        <div matListItemLine>{{folder.updated | date}}</div>
+    </mat-list-item>
+</mat-list>
+
+
