@@ -10,7 +10,7 @@ import { BottomsheetHtmlComponent } from '../bottomsheet-html/bottomsheet-html.c
 export class BottomsheetComponent implements OnInit {
 
   constructor(private _bootmSheet : MatBottomSheet) { }
-  openbootmsheet(){
+  openbottomsheet(){
     this._bootmSheet.open(BottomsheetHtmlComponent)
   }
 

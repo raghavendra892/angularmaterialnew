@@ -38,7 +38,7 @@ const routes: Routes = [
   {path : 'spinner', component: SpinnerComponent},
   {path : 'menu', component: MenuComponent},
   {path : 'card', component: CardComponent},
-  {path : 'bootmsheet', component: BottomsheetComponent},
+  {path : 'bottomsheet', component: BottomsheetComponent},
   {path : 'tooltip', component: ToolTipComponent},
   {path : 'list', component: ListComponent},
   {path : 'divider', component: DividerComponent},
